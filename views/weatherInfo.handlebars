@@ -1,0 +1,13 @@
+<h1>Weather for {{weatherInfo.name}}</h1>
+
+<ul>
+    <li name='temp'>Current temp: {{weatherInfo.main.temp}}</li>
+    <li name='range'>Temp range: {{weatherInfo.main.temp_min}} - {{weatherInfo.main.temp_max}}</li>
+    <li name='condition'>Condition: {{weatherInfo.weather.[0].main}}</li>
+</ul>
+
+<form action='/mood' method='POST'>
+<legend>Your mood</legend>
+    <input type='text' name='mood'>
+    <button type='submit'>Submit</button>
+</form>
