@@ -7,7 +7,7 @@ mongoose.connect(mongoUri, { useNewUrlParser: true });
 
 mongoose.connection.on("error", (err) => {
   console.log(err);
-  throw new Error(`Could not connect to ${mongoUri}`);
+  throw new Error(`Could not connect to ${MONGODB_URI}`);
 });
 
 module.exports = mongoose.connection;
