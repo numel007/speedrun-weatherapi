@@ -11,4 +11,4 @@ ENV MONGODB_URI=mongodb+srv://numel007:rBj4mtRdzsJtFI2A@cluster0.wyzu6.mongodb.n
 
 EXPOSE 3000
 
-CMD ["node", "app.js"]
+CMD ["node", "start"]
